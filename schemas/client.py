@@ -1,0 +1,8 @@
+from datetime import date
+from pydantic import BaseModel
+
+class ClientIn(BaseModel):
+    name: str
+    last_name: str
+    birth_date: date
+    email: str
