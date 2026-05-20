@@ -2,11 +2,11 @@ from datetime import date, datetime
 from pydantic import BaseModel
 
 class ClientOut(BaseModel):
-    nome: str
-    sobrenome: str
+    name: str
+    last_name: str
     cpf: str
     email: str
-    data_nascimento: date
-    telefone: str
-    cadastro_em: datetime
+    birth_date: date
+    phone_number: str
+    register_at: datetime
     
